@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Project Name - описание">
+  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+  <!-- используйте только для шрифта находящегося на первом экране -->
+  <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Компоненты</title>
+  <style>
+    main>.container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .components-backwards {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-left: 7px;
+    }
+
+    .components-backwards span:first-child {
+      position: relative;
+      top: -3px;
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 16px;
+      line-height: 24px;
+      vertical-align: top;
+      transform: scale(2);
+    }
+
+    .components-backwards span:last-child {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .components-backwards+h1 {
+      margin-bottom: 0;
+    }
+
+    .container>section {
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+    </svg>
+  </div>
+  <div class="wrapper">
+    <header class="header ">
+      <div class="header__wrapper">
+        <a class="header__logo" href="main.html" aria-label="Переход на главную">
+          <img src="img/svg/logo.svg" alt="Логотип SweetCorp" width="100" height="88">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+            <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2V0ZM26 2C26.5523 2 27 1.55228 27 1C27 0.447715 26.5523 0 26 0V2ZM1 2H26V0H1V2Z" fill="#DD4141" />
+              <path d="M1 9.5C0.447715 9.5 0 9.94772 0 10.5C0 11.0523 0.447715 11.5 1 11.5V9.5ZM26 11.5C26.5523 11.5 27 11.0523 27 10.5C27 9.94772 26.5523 9.5 26 9.5V11.5ZM1 11.5H26V9.5H1V11.5Z" fill="#DD4141" />
+              <path d="M1 19C0.447715 19 0 19.4477 0 20C0 20.5523 0.447715 21 1 21V19ZM26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM1 21H26V19H1V21Z" fill="#DD4141" />
+            </svg>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link ">Каталог подарков</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link ">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link ">Доставка и оплата</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link ">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="tel:+74954764144" class="header__phone">
+          +7 (495) 476 41-44
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <a class="components-backwards" href="index.html">
+          <span>&larr;</span>
+          <span>вернуться на разводящую</span>
+        </a>
+        <h1>Компоненты, используемые в вёрстке</h1>
+        <section>
+          <h2>Название компонента или группы компонентов</h2>
+          <p>Класс компонента \ модификаторы</p>
+          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
+          <div>Компонент</div>
+        </section>
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <!-- <section>
+          <h2></h2>
+
+          <p></p>
+        </section> -->
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img src="img/svg/logo-recolor.svg" alt="Footer's logo" class="footer__logo">
+        <a href="tel:+74954764144" class="footer__phonenumber">+7 (495) 476 41-44</a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

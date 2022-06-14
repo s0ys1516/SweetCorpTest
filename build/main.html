@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Project Name - описание">
+  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+  <!-- используйте только для шрифта находящегося на первом экране -->
+  <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>ProjectName — Главная</title>
+</head>
+
+<body>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+    </svg>
+  </div>
+  <div class="wrapper">
+    <header class="header ">
+      <div class="header__wrapper">
+        <a class="header__logo" aria-label="Переход на главную">
+          <img src="img/svg/logo.svg" alt="Логотип SweetCorp" width="100" height="88">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+            <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2V0ZM26 2C26.5523 2 27 1.55228 27 1C27 0.447715 26.5523 0 26 0V2ZM1 2H26V0H1V2Z" fill="#DD4141" />
+              <path d="M1 9.5C0.447715 9.5 0 9.94772 0 10.5C0 11.0523 0.447715 11.5 1 11.5V9.5ZM26 11.5C26.5523 11.5 27 11.0523 27 10.5C27 9.94772 26.5523 9.5 26 9.5V11.5ZM1 11.5H26V9.5H1V11.5Z" fill="#DD4141" />
+              <path d="M1 19C0.447715 19 0 19.4477 0 20C0 20.5523 0.447715 21 1 21V19ZM26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM1 21H26V19H1V21Z" fill="#DD4141" />
+            </svg>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link ">Каталог подарков</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link ">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link ">Доставка и оплата</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link ">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="tel:+74954764144" class="header__phone">
+          +7 (495) 476 41-44
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="introduce">
+        <picture>
+          <source srcset="img/bg/intro360.jpg" media="(max-width: 400px)">
+          <source srcset="img/bg/intro768.jpg" media="(max-width: 800px)">
+          <img class="introduce__background" src="img/bg/intro.jpg" alt="Задний фон первого блока">
+        </picture>
+        <h1 class="introduce__title">Сладкие новогодние подарки оптом</h1>
+        <button class="introduce__btn button--white">Узнать подробнее</button>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Почему выбирают нас?</h2>
+        <ul class="advantages__list">
+          <li class="advantages__point advantages__point--first">Доставка по России и отгрузка к желаемой дате</li>
+          <li class="advantages__point advantages__point--second">Тщательно отобранные конфеты в каждом наборе</li>
+          <li class="advantages__point advantages__point--third">Варианты подарков под любые нужды</li>
+        </ul>
+      </section>
+      <section class="gift">
+        <h2 class="gift__title">Наши подарки</h2>
+        <ul class="gift__list">
+          <li class="gift__point gift__point--hidden">
+            <h2 class="gift__subtitle gift__subtitle--hidden">Наши подарки</h2>
+          </li>
+          <li class="gift__point">
+            <span class="gift__subtitle">Для детей</span>
+            <picture class="gift__picture gift__picture--first"><img src="img/content/for-children.jpg" alt="Изображение под подарки для детей"></picture>
+          </li>
+          <li class="gift__point">
+            <span class="gift__subtitle gift__picture--second">Для сотрудников</span>
+            <picture class="gift__picture"><img src="img/content/for-employees.jpg" alt="Изображение под подарки для сотрудников">
+            </picture>
+          </li>
+          <li class="gift__point">
+            <span class="gift__subtitle">Для близких</span>
+            <picture class="gift__picture gift__picture--third"><img src="img/content/for-relatives.jpg" alt="Изображение под подарки для близких"></picture>
+          </li>
+        </ul>
+      </section>
+      <section class="firm">
+        <h2 class="firm__title">Производители, чьи конфеты есть в наших подарках</h2>
+        <ul class="firm__list">
+          <li class="firm__point"><img src="img/svg/nestle.svg" alt="Логотип Нестле"></li>
+          <li class="firm__point"><img src="img/svg/krasniyoktyabr.svg" alt="Логотип Красный Октябрь"></li>
+          <li class="firm__point"><img src="img/svg/konti.svg" alt="Логотип Конти"></li>
+          <li class="firm__point"><img src="img/svg/kinder.svg" alt="Логотип Киндер"></li>
+          <li class="firm__point"><img src="img/svg/babaevskiy.svg" alt="Логотип Бабаевский"></li>
+        </ul>
+      </section>
+      <section class="store">
+        <div class="store__store">
+          <h2 class="store__title">Мы есть на Wildberries</h2>
+          <p class="store__text">Для заказа подарков в розницу</p>
+          <button class="store__btn button--red">Перейти в магазин</button>
+        </div>
+        <ul class="store__list">
+          <li class="store__point"><img src="img/content/news-1.jpg" alt="Новость"></li>
+          <li class="store__point"><img src="img/content/news-2.jpg" alt="Новость"></li>
+          <li class="store__point"><img src="img/content/news-3.jpg" alt="Новость"></li>
+        </ul>
+      </section>
+      <section class="work">
+        <!-- <picture class="work__background">
+		<source srcset="img/bg/work360.jpg" media="(max-width: 545px)">
+		<source srcset="img/bg/work768.jpg" media="(max-width: 1030px)">
+		<img class="work__img" src="img/bg/work.jpg" alt="Задний фон первого блока">
+	</picture> -->
+        <h2 class="work__title">Как мы работаем</h2>
+        <ol class="work__list">
+          <li class="work__point work__point--first"><span class="work__position">1.</span>
+            <p class="work__text">Оставьте заявку на нашем сайте</p>
+          </li>
+          <li class="work__point work__point--second"><span class="work__position">2.</span>
+            <p class="work__text">Обсудите с менеджером все
+              детали</p>
+          </li>
+          <li class="work__point work__point--third"><span class="work__position">3.</span>
+            <p class="work__text">Получите счет на оплату услуг
+              и оплатите его удобным для Вас способом</p>
+          </li>
+          <li class="work__point work__point--fourth"><span class="work__position">4.</span>
+            <p class="work__text">Выберите дату доставки и
+              получите свой заказ вовремя</p>
+          </li>
+          <li class="work__point work__point--fifth"><span class="work__position">5.</span>
+            <p class="work__text">Наслаждайтесь вкусными сладкими
+              подарками</p>
+          </li>
+        </ol>
+      </section>
+      <section class="delivery">
+        <h2 class="delivery__title">Способы доставки</h2>
+        <ul class="delivery__list">
+          <li class="delivery__point delivery__point--first">
+            <h3 class="delivery__subtitle">Экспедитором по Москве</h3>
+            <p class="delivery__text">Доставка по Москве
+              осуществляется бесплатно при заказе на сумму от 15 000 рублей.</p>
+          </li>
+          <li class="delivery__point delivery__point--second">
+            <h3 class="delivery__subtitle delivery__subtitle--alt">Самовывоз</h3>
+            <h3 class="delivery__subtitle delivery__subtitle--second">Вывоз товара самостоятельно</h3>
+            <p class="delivery__text">Вы сможете
+              забрать товар самостоятельно с нашего склада.</p>
+          </li>
+          <li class="delivery__point delivery__point--third">
+            <h3 class="delivery__subtitle">Доставка по России</h3>
+            <p class="delivery__text">Доставка по России
+              осуществляется бесплатно до дверей при заказе на сумму от 50 000 рублей.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="partners">
+        <h2 class="partners__title">Наши партнеры</h2>
+        <ul class="partners__list">
+          <li class="partners__point"><img src="img/svg/dpd.svg" alt="Логотип ДПД"></li>
+          <li class="partners__point"><img src="img/svg/cdek.svg" alt="Логотип СДЭК"></li>
+          <li class="partners__point"><img src="img/svg/deloviyelinii.svg" alt="Логотип Деловые Линии"></li>
+          <li class="partners__point"><img src="img/svg/ozon.svg" alt="Логотип Озон"></li>
+        </ul>
+      </section>
+      <section class="map">
+        <div class="map__data">
+          <h2 class="map__title">Контакты</h2>
+          <ul class="map__list">
+            <li class="map__point map__point--first">+7 (906) 638-93-43</li>
+            <li class="map__point map__point--second">Дмитровское шоссе 100с2, офис 2228</li>
+            <li class="map__point map__point--third">sales@sweetcorp.ru</li>
+          </ul>
+        </div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1405d17eb4fac22239854aa01d51922cd192e608ab80faed04eac5a5be76b5d4&amp;width=771&amp;height=446&amp;lang=ru_RU&amp;scroll=true"></script>
+      </section>
+      <section class="form">
+        <h2 class="form__title">Оставьте заявку и мы Вам перезвоним!</h2>
+        <p class="form__text">Наш менеджер свяжется с нами и ответит на все вопросы, которые Вы зададите!</p>
+        <form action="#" class="form__form">
+          <input class="form__username" type="text" name="username" id="input-username" placeholder="Имя">
+          <input class="form__phone" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="input-telephone" placeholder="Телефон" maxlength="10">
+          <button class="form-button button--red" type="submit">Отправить заявку</button>
+        </form>
+      </section>
+      <!-- <div class="container">
+        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
+        <p><a href="#" data-modal="success">modal--success link</a></p>
+      </div> -->
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img src="img/svg/logo-recolor.svg" alt="Footer's logo" class="footer__logo">
+        <a href="tel:+74954764144" class="footer__phonenumber">+7 (495) 476 41-44</a>
+      </div>
+    </footer>
+    <div class="modal modal--preload modal--feedback    ">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
